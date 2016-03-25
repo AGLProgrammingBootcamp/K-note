@@ -1838,3 +1838,279 @@ ActionView::Template::Error (Invalid CSS after "font-family:": expected pseudocl
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (123.9ms)
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:06:57 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Invalid CSS after "font-family:": expected pseudoclass or pseudoelement, was ""Malgun Gothic"..."):
+    2: <html>
+    3: <head>
+    4:   <title>Knote</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/home.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3242024873218303901_27685320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (30.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (117.8ms)
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:07:12 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-c0fe4330fe7429a9efd0a4ac998812eb4eb6a0cea71fc159e5d1a546f22b0b3b.css?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:07:13 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:20 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 166ms (Views: 165.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/assets/home.self-a573a97db745886e550df8aadec56ce11951371e116dc561f4036416fa1b2c93.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:21 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 209ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-a573a97db745886e550df8aadec56ce11951371e116dc561f4036416fa1b2c93.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:24 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:49 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-336f496295e9097d104646cdc3bb2a1b5c48964e3d6363a06fd5d538c6217ec7.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:50 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-336f496295e9097d104646cdc3bb2a1b5c48964e3d6363a06fd5d538c6217ec7.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:53 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:08:54 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:08:54 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:09:51 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/assets/home.self-23a4ee856d851c3b97ea73c48fc55db41a0cd7eeb59a65ff0f8c00f272b09e43.css?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:09:52 +0000
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:10:45 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (Invalid CSS after "...", "sans-serif"": expected "{", was ";}"):
+    2: <html>
+    3: <head>
+    4:   <title>Knote</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/home.scss:4
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3242024873218303901_27685320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (131.4ms)
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:10:59 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (Invalid CSS after "...ku Gothic Pro",": expected "{", was "}"):
+    2: <html>
+    3: <head>
+    4:   <title>Knote</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/home.scss:4
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3242024873218303901_27685320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (28.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (119.2ms)
+
+
+Started GET "/top" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+Processing by HomeController#top as HTML
+  Rendered home/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-c2536308d70845e677b769b56b5a266a7c7d31acd2312d7a18fca6ae71791e47.css?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-7551f3212860c6b103730601ff759a4eb7ae7f3469774a48f52d51ba5fd0a0b3.js?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
+
+
+Started GET "/assets/jquery.self-4c7649dd655c61cb850cfd2e71f937c3bbf3e3a752a3499ed8bb9884473fe1dd.js?body=1" for 113.43.112.90 at 2016-03-25 06:11:10 +0000
