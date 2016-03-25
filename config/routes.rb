@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'notes/new'=> 'notes#new'
+  get 'practice/sentences'=> 'practice#sentences'
 
   get '/top' => 'home#top'
   
