@@ -4,7 +4,7 @@
 
 <ul>
 <% @practices.each do |practice| %>
-    <li><%= practice.sentence %></li>
+    <li><%=link_to practice.sentence, "/sentences/#{practice.id}"%></li>
 
 <%end%>
 </ul>

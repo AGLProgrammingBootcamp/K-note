@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   
-  get 'practice/sentences'=> 'practice#sentences'
+match ':controller(/:action(:id))', via:[:get,:post,:patch]
+
+
+
+  get '/sentences/:id'=> 'practice#view'
 
   get '/top' => 'home#top'
   
