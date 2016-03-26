@@ -1,0 +1,10 @@
+<h1>シチュエーションの中から好きな文章を選択してハングルを練習してみよう</h1>
+
+<h2>あいさつ</h2>
+
+<ul>
+<% @practices.each do |practice| %>
+    <li><%=link_to practice.sentence, "/sentences/#{practice.id}"%></li>
+
+<%end%>
+</ul>
